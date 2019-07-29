@@ -1,1 +1,159 @@
-/* This is going to be used for any modified/custom styling */
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    display: flex;
+    align-content: center;
+    padding: 5px;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+.logo img {
+    display: flex;
+    margin-right: 10px;
+    margin: 5px;
+
+}
+.logo p {
+    font-family: 'Indie Flower', cursive;
+    margin: 5px;
+}
+#slogan {
+    color: #990000;
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+    border: 1px solid #990000;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;   
+}
+
+#title {
+    color: white;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.main {
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
+}
+.hero {
+    height: 70vh;
+    font-family: 'Indie Flower', cursive;
+    font-size: 110px;
+    color: white;
+
+    
+    /*Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    
+    background-image: url(https://static.wixstatic.com/media/feac53_d5774128076746cd96c629fe5eba2c00~mv2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  } 
+
+.img {
+    width: 100px;
+}
+.concept {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    font-size: 30px
+
+}
+
+#slider {
+    box-shadow: 0 0 20px rgba(0,0,0,0);
+    margin: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.vistProd {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid white;
+    text-align: center;
+
+}
+
+/* footer css */
+.footer .logo {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px
+}
+
+.footer {
+background-color: #990000;
+width: 100%;
+position: relative;
+top: 70px;
+bottom: 0px;
+border: 2px solid brown;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.copyright {
+font-family: 'Quicksand', sans-serif;
+display: flex;
+justify-content: center;
+
+}
+
+.social {
+padding: 5px;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+.social li {
+display: flex;
+font-family: 'Quicksand', sans-serif;
+justify-content: space-between;
+}
+.fab {
+    color: white;
+}
+
+
+
+
+/*for mobile phones/tablets*/
+
+@media screen and (max-width: 600px) {
+}
+
+
+/* desktop */
+
+@media screen and (min-width: 800px) {
+    .concept{
+        font-size: 40px;
+    }
+
+}
+
+

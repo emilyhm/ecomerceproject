@@ -1,20 +1,406 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+
+
+
+<!--google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Fascinate|Indie+Flower|Quicksand|Space+Mono&display=swap" rel="stylesheet">
+
+<!--css-->
+  <link rel="stylesheet" type="text/css" href="./lib/css/product.css" />
+
+  <script src="./lib/js/product.js"></script>
+
+  <title>Products</title>
+</head>
+
+<body>
+  <!--INSERT NAV HERE!!!-->
+
+
+  <nav class=" bar navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Film_strip.svg/1115px-Film_strip.svg.png"
+          width="30" height="30" class="d-inline-block align-top" alt="black and white film strip with brand name">
+        <p>Story Gear</p>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Say Hello!</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="main">
+      <h1 id="title">Story Gear Warehouse</h1>
+      <p id="slogan">Tell Us a Story.
+      </p>
+
+
+  <h2 class="category">Filter By Category</h2>
+  <div class="container"> 
+      <input type="radio" id="group1" name="color" />
+      <label for="group1">Cameras/Lens</label>
+      <input type="radio" id="group2" name="color"/>
+      <label for="group2">Tripods/Lights</label>
+      <input type="radio" id="group3" name="color"/>
+      <label for="group3">Camera Bags/External Storage</label>
+      <input type="radio" id="reset" name="color"/>
+      <label for="reset">RESET</label>
+  
+  
+  
+ 
+  <!-- jquery filter
+
+  <div class="filter">
+    <select class="custom-select custom-select-lg mb-3">
+      <option value="ask">Select a Type of Gear</option>
+      <option value="cameras">Cameras</option>
+      <option value="lens">Lens</option>
+      <option value="tripod">Tripod</option>
+      <option value="lighting">Lights</option>
+      <option value="camera-bags">Camera Bags</option>
+      <option value="storage">External Storage</option>
+    </select>
+  </div>
+-->
+
+
+ 
+  <div class="group1">
+    <h2 class="subtitle ">Cameras</h2>
+     <div class="camera box desktop">
+        <div class="red space left">
+          <p class="prodTitle">DSMC2 BRAIN RED DRAGON-X 5K S35</p>
+          <img class="prodImg"
+            src="https://www.red.com/SSP%20Applications/Red@SuiteCentric/SCA%20Kilimanjaro/img/products/710-0317_0.png?resizeid=5&resizeh=1200&resizew=1200"
+            alt="black red camera">
+
+          <p class="price">$14,950</p>
+          <p class="description">
+            <cite>DRAGON-X features the industry workhorse and award-winning DRAGON sensor, now with IPP2, delivering 5K
+              cinematic imagery in a Super 35 format.</cite>
+          </p>
+          <p class="moreInfo">
+            <a href="https://www.red.com/DSMC2-BRAIN?quantity=1&sensor=4">
+              <button type="button" class="btn btn-outline-light">More Info
+              </button>
+              </a>
+          </p>
+        </div>
+        <div class="canon right">
+          <p class="prodTitle">Canon EOS 1D Mark IV (Used)</p>
+          <img class="prodImg"
+            src="https://www.usa.canon.com/internet/wcm/connect/us/cd4520ed-0c80-401c-8532-2fa2d6b74134/1d_markiv-675x450.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_P1KGHJ01L85180AUEPQQJ53034-cd4520ed-0c80-401c-8532-2fa2d6b74134-l2aLV03"
+            alt="black canon camera">
+
+          <p class="price">$1,199.95</p>
+          <p class="description">
+            <cite>Offering a comprehensive combination of speed, accuracy and image quality, the EOS-1D Mark IV is the
+              perfect choice for professional photographers and subjects on the move.</cite>
+          </p>
+          <p class="moreInfo">
+            <button type="button" class="btn btn-outline-light">
+              <a href="https://www.bhphotovideo.com/c/product/801920107-USE/canon_3822b002_eos_1d_mark_iv.html?gclid=CjwKCAjwpuXpBRAAEiwAyRRPgVPvGA2aGcvUDQUg-Gg-6KAj0hSByYUa5f6xUd9v3kfRxAlt0EtcJxoCCFwQAvD_BwE">
+                <button type="button" class="btn btn-outline-light">More
+                Info</button>
+              </a>
+          </p>
+        </div>
+      </div>
+  
+  
+    <h2 class="subtitle">Lens</h2>
+      <div class="lens box desktop">
+        <div class="mm35 space left">
+          <p class="prodTitle">EF 35mm f/1.4L USM</p> <img class="prodImg"
+            src="https://www.usa.canon.com/internet/wcm/connect/us/923abb72-0bd7-4539-b8b7-cf4bbbaaa725/ef-35-14l-usm-d.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_P1KGHJ01L85180AUEPQQJ53034-923abb72-0bd7-4539-b8b7-cf4bbbaaa725-l0UGosv"
+            alt="black 35mm lens">
+
+          <p class="price">$1,099.00</p>
+          <p class="description">
+            <cite>L-series professional f/1.4 wide-angle lens with an Aspherical lens element to correct aberrations.
+              The floating system enables high picture quality to be obtained over the entire focusing range.
+              Autofocusing is quick and quiet with rear focusing and ring USM. </cite>
+          </p>
+          <p class="moreInfo">
+            <button type="button" class="btn btn-outline-light">
+              <a
+                href="https://www.usa.canon.com/internet/portal/us/home/products/details/lenses/ef/wide-angle/ef-35mm-f-1-4l-usm">More
+                Info</a>
+            </button>
+          </p>
+        </div>
+        <div class="mm100 right">
+          <p class="prodTitle">EF 100mm f/2.8 Macro USM</p>
+          <img class="prodImg"
+            src="https://shop.usa.canon.com/wcsstore/ExtendedSitesCatalogAssetStore/ef100_28macrousm_1_xl.jpg" alt="black 100mm lens">
+
+          <p class="price">$599.99</p>
+          <p class="description">
+            <cite>Autofocus lens for macro photography up to life-size (1x) magnification. Inner focusing affords a long
+              working distance of 5.9in. (149mm) at 1x. A 3-group floating system results in excellent delineation at
+              all focusing distances.</cite>
+          </p>
+          <p class="moreInfo">
+            <button type="button" class="btn btn-outline-light">
+              <a href="https://shop.usa.canon.com/shop/en/catalog/ef-100mm-f-28-macro-usm">More Info</a>
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+<div class="group2">
+   <h2 class="subtitle">Tripods</h2>
+      <div class="tripod box desktop">
+        <div class="gorilla space left">
+          <p class="prodTitle">Joby GorillaPod Tripod</p>
+          <img class="prodImg"
+            src="https://cdn.vitecimagingsolutions.com/pub/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/g/o/gorillapod-kit-5k-bentlower.jpg"
+            alt="black joby gorilla tripod">
+
+          <p class="price">$179.95</p>
+          <p class="description">
+            <cite>Professional-grade GorillaPod tripod with ball head mount capable of holding 5kg of camera and zoom
+              lens. With flexible legs & ball head that secures pro camera gear anywhere.</cite>
+          </p>
+          <p class="moreInfo">
+            <button type="button" class="btn btn-outline-light">
+              <a href="https://joby.com/us-en/gorillapod-5k-kit-jb01508-bww/">More Info</a>
+            </button>
+          </p>
+        </div>
+        <div class="peakDesign right">
+          <p class="prodTitle">Travel Tripod by Peak Design </p>
+          <img class="prodImg"
+            src="https://ksr-ugc.imgix.net/assets/025/855/992/1c00ede28eba30818fd7f52d1e5e0bad_original.jpg?ixlib=rb-2.1.0&crop=faces&w=1552&h=873&fit=crop&v=1563493272&auto=format&frame=1&q=92&s=c1449771c3012a07d5f4611904b84b44"
+            alt="black peak design tripod">
+
+          <p class="price">$289 or $479</p>
+          <p class="description">
+            <cite>We engineered professional-quality stability and performance. And we added thoughtful features to help
+              you get the shot— with any gear, in any environment, from any point of view.</cite>
+          </p>
+          <p class="moreInfo">
+            <button type="button" class="btn btn-outline-light">
+              <a
+                href="https://www.kickstarter.com/projects/peak-design/travel-tripod-by-peak-design?pix=e_1_0&ref=9a3o84&utm_campaign=Influencer&utm_medium=Affiliate&utm_source=PeterMcKinnon">More
+                Info</a>
+            </button>
+          </p>
+        </div>
+      </div>
+
+   <h2 class="subtitle">Lights</h2>
+      <div class="lighting box desktop">
+        <div class="al-mx space left">
+          <p class="prodTitle">Aputure AL-MX</p>
+          <img class="prodImg" src="https://cdn.shopify.com/s/files/1/1343/1935/products/MX_SMD_bulb.jpg?v=1522207724"
+            alt="black and red aputure light">
+
+          <p class="price">$149</p>
+          <p class="description">
+            <cite>The AL-MX is more powerful than any other light of its size. It packs 128 SMD LED bulbs into a credit
+              card-sized panel. With both CRI & TLCI ratings over 95, and a wide 120° beam angle that outputs 3200 lux
+              at 0.3m, the possibilities for this light are endless.</cite>
+          </p>
+          <p class="moreInfo">
+            <button type="button" class="btn btn-outline-light">
+              <a href="https://store.aputure.com/products/al-mx/">More Info</a>
+            </button>
+          </p>
+        </div>
+        <div class="ls-mini20 right">
+          <p class="prodTitle">Aputure LS-mini20</p>
+          <img class="prodImg" src="https://cdn.shopify.com/s/files/1/1343/1935/products/mini20d-05.jpg?v=1508813888"
+            alt="larger black and red aputure light">
+
+          <p class="price">Ranges from $260 to $280</p>
+          <p class="description">
+            <cite>The Aputure LS-mini20 offers you completely controllable and shapeable light in any situation. Whether
+              you’re dealing with shape-based lighting or portrait lighting, the LS-mini20 is the perfect tool to turn
+              your vision into a reality.</cite>
+          </p>
+          <p class="moreInfo">
+            <button type="button" class="btn btn-outline-light">
+              <a href="https://store.aputure.com/products/ls-mini20/">More Info</a>
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+<div class="group3">
+   <h2 class="subtitle">Camera Bags</h2>
+      <div class="camera-bags box desktop">
+        <div class="ona space left">
+          <p class="prodTitle">The Brixton by ONA</p>
+          <img class="prodImg" src="https://www.onabags.com/media/catalog/product/b/r/brixton_smoke_front_large.jpg"
+            alt="brown and grey crossbody camera bag">
+
+          <p class="price">$299</p>
+          <p class="description">
+            <cite>Handcrafted with water-resistant waxed canvas and detailed with full-grain leather, the Brixton camera
+              bag is designed to protect a camera, two or three lenses and up to a 13-inch laptop. </cite>
+          </p>
+          <p class="moreInfo">
+            <button type="button" class="btn btn-outline-light">
+              <a href="https://www.onabags.com/store/messenger-bags/the-brixton.html?color=smoke">More Info</a>
+            </button>
+          </p>
+        </div>
+        <div class="woosir right">
+          <p class="prodTitle">Waterproof Waxed Canvas Bag by Woosir</p>
+          <img class="prodImg"
+            src="https://cdn.shopify.com/s/files/1/0037/8683/3993/products/product-image-858069642@2x.jpg?v=1555491128"
+            alt="khaki camera bag">
+
+          <p class="price">$69.99</p>
+          <p class="description">
+            <cite>
+              There are two parts in this camera backpack: Top compartment can hold the travel necessity like clothes,
+              towel, notebooks. The bottom
+              compartment is designed for the professional DSLR digital camera (such as Canon, Nikon, Sony,
+              Pentax).</cite>
+          </p>
+          <p class="moreInfo">
+            <button type="button" class="btn btn-outline-light">
+              <a
+                href="https://woosir.com/products/waterproof-waxed-canvas-camera-backpack?variant=18117152866377&utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&gclid=CjwKCAjwpuXpBRAAEiwAyRRPgcUxaj5vnAOfWhaTYPk9D319BxLfJGxLQwzpVRmcPQo1GQEe09yz_RoC2vYQAvD_BwE">More
+                Info</a>
+            </button>
+          </p>
+        </div>
+      </div>
+
+   <h2 class="subtitle">External Storage</h2>
+      <div class="storage box desktop">
+        <div class="gnarlbox space left">
+          <p class="prodTitle">GNARBOX 2.0 SSD (1 TB)</p>
+          <img class="prodImg"
+            src="https://cdn.shopify.com/s/files/1/0953/0522/products/gnarbox2-productshotA_3f875b46-dbbd-4373-9031-1ce99ca333d4_800x.jpg?v=1554332554"
+            alt="black gnarbox">
+
+          <p class="price">$899</p>
+          <p class="description">
+            <cite>With single-step backup, dedicated workspaces for photographers and videographers, and integrated
+              access to professional editing software, GNARBOX will save you time and make you a more reliable
+              creator.</cite>
+          </p>
+          <p class="moreInfo">
+            <button type="button" class="btn btn-outline-light">
+              <a href="https://www.gnarbox.com/products/pre-order-gnarbox-2-0-ssd-1tb">More Info</a>
+            </button>
+          </p>
+        </div>
+        <div class="seagate right">
+          <p class="prodTitle">Seagate 2TB Portable External Hard Drive</p>
+          <img class="prodImg"
+            src="https://www.seagate.com/files/www-content/product-content/backup-plus-fam/backup-plus-ultra-slim/_shared/images/bup-ultra-slim-gold-silver-family-hi-res-3000x3000.jpg"
+            alt="two gold and grey slim hard drive">
+
+          <p class="price">$60.99</p>
+          <p class="description">
+            <cite>An external hard drive for Mac and Windows, Backup Plus Ultra Slim offers 2TB of space for photos,
+              music, and more. </cite>
+          </p>
+          <p class="moreInfo">
+            <button type="button" class="btn btn-outline-light">
+              <a
+                href="https://www.amazon.com/Seagate-Portable-External-Photography-STEH2000100/dp/B0195XZJ9E/ref=sr_1_2?qid=1564103807&refinements=p_n_feature_keywords_browse-bin%3A3093282011&s=pc&sr=1-2">More
+                Info</a>
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+  </div>
+
+  <!--insert footer here-->
+  <!--footer-->
+
+  <footer class="footer">
+      <div class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Film_strip.svg/1115px-Film_strip.svg.png"
+            width="30" height="30" class="d-inline-block align-top" alt="black and white film strip with brand name">
+          <p>Story Gear</p>
+        </div>
+        
+      <div class="copyright">
+        <p>&copy; Emily Hernandez-Mendez</p>
+        </div>
+      
+     <div class="social"> 
+       <ul>
+        <li>
+          <a href="https://www.instagram.com/">
+              <i class="fab fa-instagram"> Instagram</i>
+          </a>
+        </li> 
+        <li>
+          <a href="https://twitter.com/">
+            <i class="fab fa-twitter"> Twitter </i>
+          </a>
+         </li>
+        <li>
+          <a href="https://www.youtube.com/">
+            <i class="fab fa-youtube"> YouTube</i>
+          </a>
+          </li>
+       </ul>
+     </div>
+    </footer>
+
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+    <!--font awesome-->
+<script src="https://kit.fontawesome.com/ebd6143adf.js"></script>
+<!-- bootstrap cdn -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
 </html>

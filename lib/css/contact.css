@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.logo {
+    font-size: 20px;
+    display: flex;
+    align-content: center;
+    padding: 5px;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+#logo img {
+    display: flex;
+    margin-right: 10px;
+    margin: 5px;
+
+}
+#logo p {
+    font-family: 'Indie Flower', cursive;
+    margin: 5px;
+}
+.main {
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
+}
+#title {
+    color: white;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 50px
+}
+.form {
+    border: 1px solid #990000;
+    padding: 50px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.box {
+    padding: 20px;
+}
+
+
+.submit {
+    text-align: center;
+}
+
+.footer #logo {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px
+}
+
+.footer {
+background-color: #990000;
+width: 100%;
+position: relative;
+top: 70px;
+bottom: 0px;
+border: 2px solid brown;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.copyright {
+font-family: 'Quicksand', sans-serif;
+display: flex;
+justify-content: center;
+
+}
+
+.social {
+padding: 5px;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+.social li {
+display: flex;
+font-family: 'Quicksand', sans-serif;
+justify-content: space-between;
+}
+.fab {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .comment {    }
+}
+
+
+@media screen and (min-width: 800px) {
+    .comments {
+        width: 20px;
+        border: 1px solid red;
+    }
+    .form {
+        width: 80%;
+    }
+    form .comment {
+        display: flex;
+        justify-content: center;
+    }
+}
